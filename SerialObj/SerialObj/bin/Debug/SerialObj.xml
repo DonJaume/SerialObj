@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SerialObj</name>
+    </assembly>
+    <members>
+        <member name="T:SerialObj.Serializacion">
+            <summary>
+            Guarda o carga objetos serializables en un archivo binario y los comprime.
+            </summary>
+        </member>
+        <member name="M:SerialObj.Serializacion.GuardaObjeto(System.String,System.Object)">
+            <summary>
+            Guarda el Objeto (serializable) en la ruta especificada.
+            </summary>
+            <param name="Patch">Ruta completa donde se guardará el objeto</param>
+            <param name="Objeto"></param>
+        </member>
+        <member name="M:SerialObj.Serializacion.CargaObjeto(System.String)">
+            <summary>
+            Carga el objeto de la ruta especificada.
+            </summary>
+            <param name="Patch">Ruta completa del objeto a cargar</param>
+            <returns>Retorna el objeto cargado</returns>
+        </member>
+    </members>
+</doc>

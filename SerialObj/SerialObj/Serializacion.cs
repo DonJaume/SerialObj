@@ -11,8 +11,13 @@ using System.IO.Compression;
 
 namespace SerialObj
 {
+    /// <summary>
+    /// Guarda o carga objetos serializables en un archivo binario y los comprime.
+    /// </summary>
     public class Serializacion
     {
+        //************************* Métodos públicos ************************************
+                     
         /// <summary>
         /// Guarda el Objeto (serializable) en la ruta especificada.
         /// </summary>
@@ -63,6 +68,8 @@ namespace SerialObj
             }
         }
 
+
+        //************************** Métodos privados ************************************
 
         private MemoryStream Compress(Stream decompressed, CompressionLevel compressionLevel = CompressionLevel.Fastest)
         {
